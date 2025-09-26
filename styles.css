@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+}
+body{
+    min-height: 100vh;
+    background: url(Stardew_Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    flex: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(74, 199, 199);
+    padding: 50px;
+    box-shadow: 2px 2px 15px hsla(235, 96%, 18%, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2 em;
+    min-width: 300px;
+    color: rgb(201, 19, 19);
+}
+.title{
+
+    width: 200px;
+    height: 200px;
+}
+hr{
+    width: 100%;
+    background-color: white;
+    height: 5px;
+    border-radius: 1 em;
+    border: none;  
+}
+.timer{
+    font-size: 5em;
+    font-weight: 700;
+}
+.button-wrapper{
+    display: flex;
+    gap: 1em;
+}
+.selection-wrapper{
+    display: flex;
+    gap: 1em;
+}
+button{
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 0.5em .5em;
+    border-radius: 0.5em;
+    border: none;
+    color:rgb(95, 8, 8);
+    cursor:pointer;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    transform: translateY(-10px);
+}
+#pomodoro{
+    background-color: rgb(168, 168, 78);
+}
+#short-break{
+    background-color: rgb(227, 64, 233);
+}
+#long-break{
+    background-color: rgb(5, 156, 138);
+}
+#start{
+    background-color: rgb(43, 138, 43);
+}
+#stop{
+    background-color: rgb(182, 110, 110);
+}
+#reset{
+    background-color: rgb(124, 124, 206);
+}
+.junimo{
+    width: auto;
+    height: auto;
+}
+.item-description{
+    padding: 5px;
+    width: 200px;
+    margin-bottom: 10px;
+}
+.item-completed:checked + .item-description{
+    background: #dddddd;
+    text-decoration: line-through;
+}
+#add{
+    padding: 8px 14px;
+    font-weight: bold;
+    color: #ffff;
+    background: #005978;
+    cursor: pointer;
+}

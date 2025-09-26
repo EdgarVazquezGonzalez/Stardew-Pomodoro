@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, inital-scale=1.0">
+        <title>Stardew Pomodoro</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="card">
+            <img class = "cat" src = 'Cat.gif'>
+            <img class = "title" img id="title" img src = "stardew_title.png">
+            <hr>
+
+            <p class="timer" id="timer">25:00</p>
+
+            <div class="selection-wrapper">
+                <button id="pomodoro">Pomodoro</button>
+                <button id="short-break">Short Break</button>
+                <button id="long-break">Long Break</button>
+            </div>
+            
+            <div class="button-wrapper">
+                
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+
+            </div>
+
+            <div class="junimo">
+            <!--  <img src = "https://i1153.photobucket.com/albums/p509/xLilviscious/JunimoOranjiAppleDance_zpstf4aerul.gif?t=1484735386"> -->
+            <!-- <img src = "https://i1153.photobucket.com/albums/p509/xLilviscious/Junimo%20Hearts%20U%20Gif2_zpsiadyksdi.gif?t=1484904417"> -->
+            <img id = "breakGif" img src = "Junimo_Family_Dance.gif" style="display: none;" alt="Break Time!">
+
+                <div class="theme-song" style="display: none;">
+                    <audio id="alarm" src="Stardew Valley Overture.mp3" preload="auto"></audio>
+                </div>     
+            </div>
+
+            <hr>
+            <div id="items"></div>
+            <template id="itemTemplate">
+                <div class="item">
+                    <input type="checkbox" class="item-completed">
+                    <input type="text" class="item-description" placeholder="to-do item...">
+                 </div>
+            </template>
+            <button id="add">Add Item</button>
+        </div>
+       
+
+    <script src="main.js"></script>
+    </body>
+
+</html>
+</html>
